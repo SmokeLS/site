@@ -1,0 +1,109 @@
+.first-block
+	background: url('../img/main-background.jpg') center center
+	background-size: cover
+	min-height: 796px
+	position: relative
+	z-index: 2
+	color: #fff
+	&::before
+		content: ''
+		position: absolute
+		min-height: 60px
+		top: 0
+		left: 0
+		width: 100%
+		background-color: rgba(0,0,0,0.5)
+		z-index: -1
+	.header
+		margin: auto
+		display: flex
+		min-height: 60px
+		max-width: 940px
+		justify-content: space-between
+		&-icon
+			display: flex
+			align-items: center
+			&__block
+				position: relative
+				padding: 4px 23px 3px 23px
+				background-color: #ab000a
+				&::before
+					content: ''
+					position: absolute
+					top: 40%
+					left: 50%
+					width: 0px
+					height: 4px
+					border-left: 1px solid #ab000a
+			&__text
+				margin-left: 20px
+				font-size: 18px
+				font-family: 'Audiowide'
+		&-nav
+			display: flex
+			align-items: center
+			margin-left: 44px
+			&__hyper
+				text-align: center
+				padding: 20px 26px
+				text-decoration: none
+				color: #fff
+				font-size: 18px
+				font-family: 'Arial'
+				&:hover
+					color: $text-color-grey
+					background-color: #000
+	.main-section
+		max-width: 940px
+		margin: auto
+		display: flex
+		margin-top: 30px
+		transform: translateY(20px)
+		&-text
+			margin-left: -10px
+			display: flex
+			flex-direction: column
+			&__title
+				margin-top: 140px
+				font-size: 60px
+				font-family: 'Audiowide'
+			&__subtitle
+				font-size: 43px
+				text-align: center
+				font-family: 'Arial'
+				margin-top: -30px
+			&__button
+				padding: 10px 26px
+				max-width: 150px
+				background-color: #000
+				color: $text-color-grey
+				border: none
+				margin-top: 43px
+				align-self: center
+	.features
+		max-width: 940px
+		margin: 7px auto 0 auto
+		display: flex
+		position: relative
+		flex-wrap: wrap
+		&::before
+			content: ''
+			min-height: 210px
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			background-color: rgba(0,0,0,0.7)
+			z-index: -1
+		&-title
+			padding: 15px 0
+			width: 100%
+			text-align: center
+			color: $text-color-grey
+			font-size: 23px
+			font-family: 'Audiowide'
+		&-photos
+			display: flex
+			&__pic
+				img
+					vertical-align: bottom

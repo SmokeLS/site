@@ -1,0 +1,26 @@
+.container
+	box-sizing: border-box
+	
+button,.footerimg,.header-icon
+	cursor: pointer
+
+.interactive
+	position: relative
+	display: block
+	cursor: pointer
+	&:hover
+		&::after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0 
+			background-color: rgba(255,255,255,.2)
+			z-index: 1
+
+@import 'variables'
+@import 'first-block'
+@import 'second-block'
+@import 'third-block'
+@import 'footer'
